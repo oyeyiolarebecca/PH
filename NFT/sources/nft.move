@@ -2,11 +2,8 @@ module nft:: nft {   //defines a new module named nft
 
     use sui::url::{Self, Url}; //Imports the Url struct and related functions from the Sui standard library.
      //This allows you to use URLs (e.g., for NFT metadata) in your module.
-
     use std::string; //Imports the string module, This gives you access to string types and utilities.
-
     use sui::event; //Let you emit event. E.g., when an NFT is minted out.
-
     use sui::display;//provides functionality for defining how objects are displayed in wallets, explorers, and other apps.
 
 
@@ -40,6 +37,7 @@ module nft:: nft {   //defines a new module named nft
         // The name of the NFT
         name: string::String,
     }
+
 
     /// Create a new nft
     public entry fun mint( // declares a public entry function means this function can be called directly in a Sui transaction.
